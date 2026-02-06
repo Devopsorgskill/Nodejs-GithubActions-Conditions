@@ -40,7 +40,7 @@ jobs:
       - name: Build application
         run: npm run build
       - name: SonarQube Analysis
-        run : npx sonar-scanner -Dsonar.projectKey=sonarcubetesting2feb26_projectsonardemo -Dsonar.organization=sonarcubetesting2feb26 -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN
+        run : npx sonar-scanner -Dsonar.projectKey=sonarcubetesting2feb26_test-node-js-venablity -Dsonar.organization=sonarcubetesting2feb26 -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONAR_TOKEN
         env:  
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
